@@ -1,1 +1,989 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" class="theme-color-3f51b5 theme-skin-light">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Aadil Hayat</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+	<!-- Icon Fonts -->
+	<link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.optionpanel/option-panel.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="colors/theme-color.css">
+
+	<!-- Modernizer for detect what features the user’s browser has to offer -->
+	<script type="text/javascript" src="js/libs/modernizr.js"></script>
+
+</head>
+
+<body class="home header-has-img loading">
+
+    <div class="mobile-nav">
+        <button class="btn-mobile mobile-nav-close"><i class="icon icon-close"></i></button>
+
+        <div class="mobile-nav-inner">
+            <nav class="nav">
+				<ul class="clearfix">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#education">Education</a></li>
+					<!-- <li>
+						<a href="category.html">Blog</a>
+						<!-- <ul>
+							<li><a href="single-image.html">Image Post</a></li>
+							<li><a href="single-slider.html">Slider Post</a></li>
+							<li><a href="single-video.html">Video Post</a></li>
+							<li><a href="single-audio.html">Audio Post</a></li>
+							<li><a href="single-vimeo.html">Vimeo Post</a></li>
+							<li><a href="single-youtube.html">Youtube Post</a></li>
+							<li><a href="single-dailymotion.html">Dailymotion Post</a></li>
+							<li><a href="single.html">Without Media Post</a></li>
+							<li><a href="typography.html">Typography Page</a></li>
+							<li><a href="404.html">404 Page</a></li>
+						</ul>
+					</li> -->
+					<!-- <li><a href="#calendar">Calendar <span></span></a></li> -->
+					<li><a href="#contact">Contact <span></span></a></li>
+				</ul>
+			</nav>
+        </div>
+    </div><!-- .mobile-nav -->
+
+    <div class="sidebar sidebar-fixed">
+        <button class="btn-sidebar btn-sidebar-close"> <i class="icon icon-close"></i></button>
+
+        <div class="widget-area">
+            <aside class="widget widget-profile">
+                <div class="profile-photo">
+                    <img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-title">Aadil Hayat</h2>
+                    <h3 class="profile-position">Data Scientist and Developer</h3>
+                </div>
+            </aside><!-- .widget-profile -->
+
+            <!-- <aside class="widget widget_search">
+                <h2 class="widget-title">Search</h2>
+                <form class="search-form">
+                    <label class="ripple">
+                        <span class="screen-reader-text">Search for:</span>
+                        <input class="search-field" type="search" placeholder="Search">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </aside><!-- .widget_search -->
+
+            <aside class="widget widget_contact">
+                <h2 class="widget-title">Contact Me</h2>
+				<form class="contactForm" action="php/contact_form.php" method="post">
+					<div class="input-field">
+						<input class="contact-name" type="text" name="name"/>
+						<span class="line"></span>
+						<label>Name</label>
+					</div>
+
+					<div class="input-field">
+						<input class="contact-email" type="email" name="email"/>
+						<span class="line"></span>
+						<label>Email</label>
+					</div>
+
+					<div class="input-field">
+						<input class="contact-subject" type="text" name="subject"/>
+						<span class="line"></span>
+						<label>Subject</label>
+					</div>
+
+					<div class="input-field">
+						<textarea class="contact-message" rows="4" name="message"></textarea>
+						<span class="line"></span>
+						<label>Message</label>
+					</div>
+
+					<span class="btn-outer btn-primary-outer ripple">
+						<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"/>
+					</span>
+
+					<div class="contact-response"></div>
+				</form>
+            </aside><!-- .widget_contact -->
+
+            <!-- <aside class="widget widget-popuplar-posts">
+                <h2 class="widget-title">Popular posts</h2>
+                <ul>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-1.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-2.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-3.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                </ul>
+            </aside><!-- .widget-popuplar-posts -->
+
+            <!-- <aside class="widget widget_tag_cloud">
+                <h2 class="widget-title">Tag Cloud</h2>
+                <div class="tagcloud">
+                    <a href="" title="1 topic">Business</a>
+                    <a href="" title="9 topics">City</a>
+                    <a href="" title="10 topics">Creative</a>
+                    <a href="" title="6 topics">Fashion</a>
+                    <a href="" title="2 topics">Music</a>
+                    <a href="" title="5 topics">News</a>
+                    <a href="" title="9 topics">Peoples</a>
+                </div>
+            </aside><!-- .widget_tag_cloud -->
+
+            <!-- <aside class="widget widget-recent-posts">
+                <h2 class="widget-title">Recent posts</h2>
+                <ul>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+                        <div class="post-info"><a href=""><i class="icon icon-comments"></i>56 comments</a></div>
+                    </li>
+                </ul>
+            </aside><!-- .widget-recent-posts -->
+
+            <!-- <aside class="widget widget_categories">
+                <h2 class="widget-title">Categories</h2>
+                <ul>
+                    <li><a href="" title="Architecture Category Posts">Architecture</a> (9)</li>
+                    <li><a href="" title="Business Category Posts">Business</a> (16)</li>
+                    <li><a href="" title="Creative Category Posts">Creative</a> (18)</li>
+                    <li><a href="" title="Design Category Posts">Design</a> (10)</li>
+                    <li><a href="" title="Development Category Posts">Development</a> (14)</li>
+                    <li><a href="" title="Education Category Posts">Education</a> (9)</li>
+                </ul>
+            </aside><!-- .widget_categories -->
+        </div><!-- .widget-area -->
+    </div><!-- .sidebar -->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="head-bg" style="background-image: url('img/uploads/rs-cover.jpg')"></div>
+
+            <div class="head-bar">
+                <div class="head-bar-inner">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <a class="logo" href="index.html">Aadil Hayat</a>
+							<!-- <a class="head-logo" href=""><img src="img/rs-logo.png" alt="RScard"/></a> -->
+                        </div>
+
+                        <div class="col-sm-9 col-xs-6">
+                            <div class="nav-wrap">
+                                <nav class="nav">
+									<ul class="clearfix">
+										<li><a href="#about">About</a></li>
+										<li><a href="#skills">Skills</a></li>
+										<li><a href="#projects">Projects</a></li>
+										<li><a href="#education">Education</a></li>
+										<!-- <li>
+											<a href="category.html">Blog</a>
+											<!-- <ul>
+												<li><a href="single-image.html">Image Post</a></li>
+												<li><a href="single-slider.html">Slider Post</a></li>
+												<li><a href="single-video.html">Video Post</a></li>
+												<li><a href="single-audio.html">Audio Post</a></li>
+												<li><a href="single-vimeo.html">Vimeo Post</a></li>
+												<li><a href="single-youtube.html">Youtube Post</a></li>
+												<li><a href="single-dailymotion.html">Dailymotion Post</a></li>
+												<li><a href="single.html">Without Media Post</a></li>
+												<li><a href="typography.html">Typography Page</a></li>
+												<li><a href="404.html">404 Page</a></li>
+											</ul>
+										</li> -->
+										<!-- <li><a href="#calendar">Calendar <span></span></a></li> -->
+										<li><a href="#contact">Contact <span></span></a></li>
+									</ul>
+								</nav>
+
+                                <button class="btn-mobile btn-mobile-nav">Menu</button>
+                                <button class="btn-sidebar btn-sidebar-open"><i class="icon icon-menu"></i></button>
+                            </div><!-- .nav-wrap -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- .header -->
+
+        <div class="content">
+            <div class="container">
+
+				<!-- START: PAGE CONTENT -->
+				<section id="about" class="section section-about">
+					<div class="animate-up">
+						<div class="section-box">
+							<div class="profile">
+								<div class="row">
+									<div class="col-xs-5">
+										<div class="profile-photo"><img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/></div>
+									</div>
+									<div class="col-xs-7">
+										<div class="profile-info">
+											<div class="profile-preword"><span>Hola</span></div>
+											<h1 class="profile-title"><span>I'm</span> Aadil Hayat</h1>
+
+											<h2 class="profile-position">Data Scientist and Developer</h2></div>
+											<dl class="profile-list">
+												<dt>Age</dt>
+												<dd>20</dd>
+												<dt>Address</dt>
+												<dd>Hall 2, Indian Institute of Technology Kanpur</dd>
+												<dt>E-mail</dt>
+												<dd><a href="mailto:hayataadil@gmail.com">hayataadil@gmail.com</a></dd>
+												<dt>Phone</dt>
+												<dd><a href="tel:+919616827469">+91 9616827469</a></dd>
+												<!-- <dt>Freelance</dt>
+												<dd>till April 15, 2016</dd>
+												<dt class="profile-vacation"><span>On Vacation</span></dt>
+												<dd class="profile-vacation"><i class="icon icon-calendar"></i>till March 25, 2016</dd> -->
+											</dl>
+									</div>
+								</div>
+							</div>
+							<div class="profile-social">
+								<ul class="social">
+									<li><a class="ripple-centered" href="https://www.facebook.com/hayataadil" target="_blank"><i class="icon icon-facebook"></i></a></li>
+									<li><a class="ripple-centered" href="https://twitter.com/hayat_aadil" target="_blank"><i class="icon icon-twitter"></i></a></li>
+									<li><a class="ripple-centered" href="https://in.linkedin.com/in/aadil-hayat-34563175" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+									<li><a class="ripple-centered" href="https://plus.google.com/113338495200331104374" target="_blank"><i class="icon icon-google-plus"></i></a></li>
+									<li><a class="ripple-centered" href="https://www.instagram.com/hayataadil" target="_blank"><i class="icon icon-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="profile-btn">
+							<a class="btn btn-border ripple" href="files/resume.pdf" target="_blank">Download Resume</a>
+						</div>
+
+						<div class="profile-text">
+							<p>Hello! I'm Aadil Hayat. </p>
+						</div>
+					</div>
+				</section><!-- #about -->
+
+				<section id="skills" class="section section-skills">
+					<div class="animate-up">
+						<h1 class="section-title">Proffessional  Skills</h1>
+						<div class="section-box">
+						<h2 class="section-subtitle">Programming Languages</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									C
+								</div>
+								<div class="col-sm-3">
+									C++
+								</div>
+								<div class="col-sm-3">
+									C#
+								</div>
+								<div class="col-sm-3">
+									Java
+								</div>
+							</div>
+							<br>
+
+							<div class="row">
+								<div class="col-sm-3">
+									PHP
+								</div>
+								<div class="col-sm-3">
+									Python
+								</div>
+								<div class="col-sm-3">
+									JavaScript
+								</div>
+								<div class="col-sm-3">
+									Mozart-Oz
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Frameworks & Libraries</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									TensorFlow
+								</div>
+								<div class="col-sm-3">
+									OpenGL
+								</div>
+								<div class="col-sm-3">
+									Hadoop
+								</div>
+								<div class="col-sm-3">
+									Dockers
+								</div>
+							</div>
+							<br>
+
+							<div class="row">
+								<div class="col-sm-3">
+									CodeIgniter
+								</div>
+								<div class="col-sm-3">
+									LeapJS
+								</div>
+								<div class="col-sm-3">
+									ThreeJS
+								</div>
+								<div class="col-sm-3">
+									Semantic-UI
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Tools & Packages</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									GIT
+								</div>
+								<div class="col-sm-3">
+									Matlab
+								</div>
+								<div class="col-sm-3">
+									Octave
+								</div>
+								<div class="col-sm-3">
+									AutoCAD
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Development Environments</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									Android Studio
+								</div>
+								<div class="col-sm-3">
+									Visual Studio
+								</div>
+								<div class="col-sm-3">
+									PHPed
+								</div>
+								<div class="col-sm-3">
+									Cloud9
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Operating Systems</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									Ubuntu
+								</div>
+								<div class="col-sm-3">
+									Android
+								</div>
+								<div class="col-sm-3">
+									CoreOS
+								</div>
+								<div class="col-sm-3">
+									Windows
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Areas of Expertise & Interests</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-3">
+									Machine Learning
+								</div>
+								<div class="col-sm-3">
+									Artificial Intelligence
+								</div>
+								<div class="col-sm-3">
+									NLP
+								</div>
+								<div class="col-sm-3">
+									UAV
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-3">
+									Web Development
+								</div>
+								<div class="col-sm-3">
+									App Development
+								</div>
+								<div class="col-sm-3">
+									Algorithms
+								</div>
+								<div class="col-sm-3">
+									Web Scrapping
+								</div>
+							</div>
+						</div>
+						<br>
+						<h2 class="section-subtitle">Courses</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-6">
+									Machine Learning Techniques
+								</div>
+								<div class="col-sm-6">
+									Computer Vision and Image Processing
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-6">
+									Natural Language Processing
+								</div>
+								<div class="col-sm-6">
+									Computer Graphics
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-6">
+									Principles of Programming Languages
+								</div>
+								<div class="col-sm-6">
+									ALgorithms
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-6">
+									Data Structures
+								</div>
+								<div class="col-sm-6">
+									Fundamentals of Computing
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-6">
+									Flight Mechanics
+								</div>
+								<div class="col-sm-6">
+									Flight Stability and Control
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #skills -->
+
+
+				<section id="projects" class="section section-projects">
+					<div class="animate-up">
+						<h2 class="section-title animate">Projects</h2>
+
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+
+								<div class="timeline-box timeline-box-left">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date">August 2015 - November 2015</div>
+										<h3>Neural Networks Based Chabot</h3>
+										<h4>Natural Language Processing</h4>
+										<p>Implemented Google's Seq2Seq model for conversations using TensorFlow library for deep learning on Nvidia GTX 760 GPU.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-right">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-left">
+										<span class="arrow"></span>
+										<div class="date">August 2015 - November 2015</div>
+										<h3>Mozart-Oz Interpreter</h3>
+										<h4>Principles of Programming Languages</h4>
+										<p>Developed Interpreter for Kernel Language of Mozart-Oz in Oz. Implemented parsing of AST form of code and closures of functions</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-left">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date">May 2015 - July 2015</div>
+										<h3>Web Infrastructure and Crawling</h3>
+										<h4>Internship</h4>
+										<p>Installed and configured CoreOS and Dockers on a bare metal server remotely. Developed cloud-config for CoreOS and systemd unit service files for various dockers. Developed custom Dockerfiles for Postfix, MySQL and Hadoop cluster. Developed DOM parsers for Organizations' and Individuals' pages from professional networking websites. Implemented multi-threaded python program to crawl specific websites.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-right">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-left">
+										<span class="arrow"></span>
+										<div class="date">January 2015</div>
+										<h3>Project Sporada</h3>
+										<h4>Inter IIT Tech Meet'15</h4>
+										<p>Developed a system to make the popular content available on phones having sporadic data connection. Designed backend server, implemented automatic modification detection and incremental updates to client. Implemented intelligent storage management, file downloading and file rendering system client side.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-left">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date">December 2014</div>
+										<h3>3D Youtube</h3>
+										<h4>Programming Club</h4>
+										<p>Developed 3d version of Youtube using ThreeJS and added gesture support using LeapJS and LEAP controller. Implemented gesture based scrolling, play/pause, mute/unmute and quality change. Designed intuitive and attractive 3d user interface and implemented 3d animations.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-right">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-left">
+										<span class="arrow"></span>
+										<div class="date">August 2014 - November 2014</div>
+										<h3>It's Placement Time</h3>
+										<h4>Computer Graphics</h4>
+										<p>Implemented OpenGL API in C++ to develop a 3d game, a comical picturisation of placements. Implemented gravity simulation, multi-player gaming, heads-up display, texture mapping and saving screenshots. Video presentation of the project can seen <a href="https://www.youtube.com/watch?v=xbQfMWos5UE">here</a>.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-left">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date">August 2014</div>
+										<h3>Student Portal</h3>
+										<h4>Enterpreneur Summit'14</h4>
+										<p>Developed a web application with the attempt to incorporate all the online services available for IITK students. Scrapped students, course, and exam schedule databases of IITK having 3000+ results. Developed intuitive UI for student search and exam schedule.</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-right">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-left">
+										<span class="arrow"></span>
+										<div class="date">May 2014 - June 2014</div>
+										<h3>Online Judge</h3>
+										<h4>Programming Club</h4>
+										<p>Developed web application for online programming competitions. Designed Administrative tools for intuitively managing and conducting competitions. Implemented background program compilation and execution for C and C++.</p>
+										</div>
+								</div>
+
+								<div class="timeline-box timeline-box-left">
+									<span class="dot"></span>
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date">January 2014 - April 2014</div>
+										<h3>Events Manager</h3>
+										<h4>Fundamentals of Computing</h4>
+										<p>Developed Windows Store App for events management at IITK. Developed JSON API for event synchronisation between database and local clients. Designed Intuitive UI for event creation and notification</p>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-right">
+									<div class="timeline-box-inner animate-left">
+										<h3>Miscellaneous</h3>
+										<h4>Other Technical Projects</h4>
+										<ul>
+											<li>Can Crusher</li>
+											<li>Pin Code Explorer</li>
+											<li>IITK Timetable App</li>
+											<li>Facebook Timeline Search</li>
+											<li>Electronic Notification Board</li>
+										</ul>
+										</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section><!-- #projects -->
+
+				<section id="education" class="section section-education">
+					<div class="animate-up">
+						<h2 class="section-title animate">Education</h2>
+
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+								<div class="timeline-box timeline-box-compact timeline-box-left">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date"><span>2013 - Present</span></div>
+										<h3>Aerosapce Engineering</h3>
+										<h4>Indian Institute of Technology Kanpur</h4>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-compact timeline-box-right">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner animate-left">
+										<span class="arrow"></span>
+										<div class="date"><span>2011 - 2013</span></div>
+										<h3>Intermediate (CBSE)</h3>
+										<h4>Delhi Public School Kalyanpur, Kanpur</h4>
+									</div>
+								</div>
+
+								<div class="timeline-box timeline-box-compact timeline-box-left">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner animate-right">
+										<span class="arrow"></span>
+										<div class="date"><span>2005 - 2011</span></div>
+										<h3>High School (ICSE)</h3>
+										<h4>Margaret Leask Memorial English College, Jhansi</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #education -->
+
+				<!-- <section id="references" class="section section-references">
+					<div class="animate-up">
+						<h2 class="section-title">References</h2>
+						<div class="section-box">
+							<ul class="ref-slider">
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>I confirm that I have dealt with New Company Ltd since 1998. Their work has been a major factor in our
+											website's success, helping it to become one of the most visited resources of its kind on the Internet.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Alexander Jokovich</span>
+												<span class="person-title">Modern LLC , HR</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>I confirm that New Company Ltd has been a customer of ours since 1998, during which time they have always made payments reliably,
+											in full and on time.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Alexander Jokovich</span>
+												<span class="person-title">Modern LLC , HR</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>I have known Robert Smith for 10 years as web developer. I can confirm that he is a man of great integrity, is extremely dedicated
+											to his family and work, and is entirely peace-loving.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Alexander Jokovich</span>
+												<span class="person-title">Modern LLC , HR</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="ref-slider-nav">
+								<span id="ref-slider-prev" class="slider-prev"></span>
+								<span id="ref-slider-next" class="slider-next"></span>
+							</div>
+						</div>
+					</div>
+				</section><!-- #references -->
+
+				<!-- <section id="blog" class="section section-blog">
+					<div class="animate-up">
+						<h2 class="section-title">From The Blog</h2>
+
+						<div class="row">
+							<div class="col-xs-6">
+								<article class="post-box">
+									<div class="post-media">
+										<div class="post-image">
+											<a href="single.html"><img src="img/uploads/thumb-449x286-1.jpg" alt=""> </a>
+										</div>
+									</div>
+
+									<div class="post-data">
+										<time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+											<span class="day">03</span>
+											<span class="month">MAY</span>
+										</time>
+
+										<div class="post-tag">
+											<a href="">#Photo</a>
+											<a href="">#Architect</a>
+										</div>
+
+										<h3 class="post-title">
+											<a href="single-image.html">Image Post</a>
+										</h3>
+
+										<div class="post-info">
+											<a href=""><i class="icon icon-user"></i>by admin</a>
+											<a href=""><i class="icon icon-comments"></i>56</a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="col-xs-6">
+								<article class="post-box">
+									<div class="post-media">
+										<div class="post-image">
+											<a href="single-vimeo.html">
+												<img src="img/uploads/thumb-449x286-5.jpg" alt="">
+												<span class="post-type-icon"><i class="icon icon-play"></i></span>
+											</a>
+										</div>
+									</div>
+
+									<div class="post-data">
+										<time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+											<span class="day">03</span>
+											<span class="month">MAY</span>
+										</time>
+
+										<div class="post-tag">
+											<a href="">#Photo</a>
+											<a href="">#Architect</a>
+										</div>
+
+										<h3 class="post-title">
+											<a href="single-vimeo.html">Vimeo Video Post</a>
+										</h3>
+
+										<div class="post-info">
+											<a href=""><i class="icon icon-user"></i>by admin</a>
+											<a href=""><i class="icon icon-comments"></i>56</a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section><!-- #blog -->
+
+				<section id="interests" class="section section-interests">
+					<div class="animate-up">
+						<h2 class="section-title">My Interests</h2>
+
+						<div class="section-box">
+							<!-- <p>I have a keen interest in photography. I was vice-president of the photography club during my time at university,
+							and during this period I organised a number of very successful exhibitions and events both on and off campus.
+							<br/>I also play the piano to grade 8 standard.</p> -->
+
+							<ul class="interests-list">
+								<li>
+									<i class="map-icon map-icon-bicycling"></i>
+									<span>Bicycling</span>
+								</li>
+								<li>
+									<i class="map-icon map-icon-movie-theater"></i>
+									<span>Watch Movies</span>
+								</li>
+								<li>
+									<i class="map-icon map-icon-shopping-mall"></i>
+									<span>Shopping</span>
+								</li>
+								<li>
+									<i class="map-icon map-icon-tennis"></i>
+									<span>Playing Badminton</span>
+								</li>
+								<li>
+									<i class="map-icon map-icon-food"></i>
+									<span>Eating</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section><!-- #interests -->
+
+				<!-- <section id="calendar" class="section section-calendar">
+					<div class="animate-up">
+						<h2 class="section-title">Calendar</h2>
+
+						<div class="calendar-busy">
+							<div class="calendar-today" style="background-image: url('img/uploads/rs-calendar-cover.jpg')">
+								<div class="valign-outer">
+									<div class="valign-middle">
+										<div class="valign-inner">
+											<div class="date">
+												<span class="day"></span>
+												<span class="month"></span>
+											</div>
+											<div class="week-day"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="calendar-cont">
+								<div class="calendar-header">
+									<div class="calendar-nav">
+										<span class="active-date"><span class="active-month"></span><span class="active-year"></span></span>
+										<a class="calendar-prev ripple-centered" title="Prev"><i class="icon icon-chevron_left"></i></a>
+										<a class="calendar-next ripple-centered" title="Next"><i class="icon icon-chevron_right"></i></a>
+									</div>
+								</div>
+
+								<table class="calendar-body">
+									<thead class="calendar-thead"></thead>
+									<tbody class="calendar-tbody"></tbody>
+								</table>
+								<div class="calendar-busy-note">Sorry. I'm not available on those days</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #calendar -->
+
+				<section id="contact" class="section section-contact">
+					<div class="animate-up">
+						<h2 class="section-title">Contact Me</h2>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="section-box contact-form">
+									<h3>Feel free to contact me</h3>
+
+									<form class="contactForm" action="php/contact_form.php" method="post">
+										<div class="input-field">
+											<input class="contact-name" type="text" name="name"/>
+											<span class="line"></span>
+											<label>Name</label>
+										</div>
+
+										<div class="input-field">
+											<input class="contact-email" type="email" name="email"/>
+											<span class="line"></span>
+											<label>Email</label>
+										</div>
+
+										<div class="input-field">
+											<input class="contact-subject" type="text" name="subject"/>
+											<span class="line"></span>
+											<label>Subject</label>
+										</div>
+
+										<div class="input-field">
+											<textarea class="contact-message" rows="4" name="message"></textarea>
+											<span class="line"></span>
+											<label>Message</label>
+										</div>
+
+										<span class="btn-outer btn-primary-outer ripple">
+											<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"/>
+										</span>
+
+										<div class="contact-response"></div>
+									</form>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="section-box contact-map">
+									<dl class="contact-info">
+										<dt>ADDRESS</dt>
+										<dd>Hall 2, Indian Institute of Technology Kanpur</dd>
+										<dt>phone</dt>
+										<dd><a href="tel:+919616827469">+91 9616827469</a></dd>
+										<dt>E-mail</dt>
+										<dd><a href="mailto:hayataadil@gmail.com">hayataadil@gmail.com</a></dd>
+									</dl>
+
+									<div id="map" data-latitude="26.510936" data-longitude="80.229712"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #contact -->
+			<!-- END: PAGE CONTENT -->
+
+            </div><!-- .container -->
+        </div><!-- .content -->
+
+        <footer class="footer">
+            <div class="footer-social">
+                <ul class="social">
+					<li><a class="ripple-centered" href="https://www.facebook.com/hayataadil" target="_blank"><i class="icon icon-facebook"></i></a></li>
+					<li><a class="ripple-centered" href="https://twitter.com/hayat_aadil" target="_blank"><i class="icon icon-twitter"></i></a></li>
+					<li><a class="ripple-centered" href="https://in.linkedin.com/in/aadil-hayat-34563175" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+					<li><a class="ripple-centered" href="https://plus.google.com/113338495200331104374" target="_blank"><i class="icon icon-google-plus"></i></a></li>
+					<li><a class="ripple-centered" href="https://www.instagram.com/hayataadil" target="_blank"><i class="icon icon-instagram"></i></a></li>
+				</ul>
+            </div>
+        </footer><!-- .footer -->
+    </div><!-- .wrapper -->
+
+	<a class="btn-scroll-top" href="#"><i class="icon icon-arrow-up"></i></a>
+    <div id="overlay"></div>
+    <div id="preloader">
+		<div class="preload-icon"><span></span><span></span></div>
+		<div class="preload-text">Loading ...</div>
+	</div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>
