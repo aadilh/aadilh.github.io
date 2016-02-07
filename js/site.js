@@ -7450,7 +7450,7 @@ mejs.version = "2.18.2", mejs.meIndex = 0, mejs.plugins = {
                     l = n.find(".contact-response");
                 return o.removeClass("error"), i = !1, "" === s.val() && (i = !0, s.parent().addClass("error")), "" !== a.val() && x(a.val()) || (i = !0, a.parent().addClass("error")), "" === r.val() && (i = !0, r.parent().addClass("error")), i || e.post("php/contact_form.php", n.serialize(), function(e) {
                     l.html(e)
-                }), !1
+                }), true
             }), h(), u()
         })
     }(jQuery);
